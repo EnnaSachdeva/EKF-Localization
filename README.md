@@ -77,3 +77,9 @@ etc. inside the loop. In the batch update, you compute a joint update for all
 landmarks visible in a particular time step. 
 
 After this, run the updataSimulation.m script to update the GUI.
+
+Three different motion models have been implemented here:
+1. alpha_T_beta : considers the controls as rotation followed by translation followed by rotation.
+2. T_phi : considers the controls as translation followed by rotation.
+3. T_T : considers the controls as translation along x followed by translation along y. Under this motion model, we assume that the robot is holonomic (in a simplistic sense, the robot does not have to rotate to move between
+any two points in the plane). 
